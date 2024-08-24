@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wontfixadmin"
+version = "0.1.0"
+description = "A web GUI for managing, categorizing, and analyzing data related to the wontfix study"
+authors = ["J. Alexander Curtis"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
