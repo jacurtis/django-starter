@@ -9,11 +9,11 @@
                 <form method="post" action="{% url 'login' %}">
                     {%  csrf_token %}
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="inputUsername" type="text" placeholder="" name="username" />
+                        <input class="form-control" id="inputUsername" type="text" placeholder="" name="username" autocomplete="username"/>
                         <label for="inputUsername">Username</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input class="form-control" id="inputPassword" type="password" placeholder="Password" name="password"/>
+                        <input class="form-control" id="inputPassword" type="password" placeholder="Password" name="password" autocomplete="password"/>
                         <label for="inputPassword">Password</label>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -21,7 +21,7 @@
                         <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                         <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
                     </div>
-                    <a class="small" href="password.html">Forgot Password?</a>
+                    <a class="small" href="{% url "password_reset" %}">Forgot Password?</a>
                     </div>
                     <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                         <button type="submit" class="btn btn-primary w-100">Login</button>
