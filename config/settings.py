@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
-SITE_NAME = "Wontfix Research"
+SITE_NAME = "Django Starter"
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
