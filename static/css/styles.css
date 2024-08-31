@@ -10934,16 +10934,16 @@ body {
   top: 56px;
 }
 
-#layoutError {
+#layoutError, #layoutBase {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-#layoutError #layoutError_content {
+#layoutError #layoutError_content, #layoutBase #layoutBase_content {
   min-width: 0;
   flex-grow: 1;
 }
-#layoutError #layoutError_footer {
+#layoutError #layoutError_footer, #layoutBase #layoutBase_footer {
   min-width: 0;
 }
 

@@ -8,6 +8,7 @@ def global_settings(request):
     """
     return {
         'SITE_NAME': settings.SITE_NAME,
+        'SITE_TITLE': f"{settings.SITE_NAME} | " ,
         'DEBUG': settings.DEBUG,
         'LOGIN_REDIRECT_URL': settings.LOGIN_REDIRECT_URL,
     }
